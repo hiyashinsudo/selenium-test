@@ -4,9 +4,3 @@ selenium==3.141.0
 toml==0.10.2
 urllib3==1.26.5
 jupyterlab==3.4.2
-mecab-python3==1.0.4
-nlplot==1.4.0
-wordcloud==1.8.1
-emoji==1.7.0
-pandas==1.3.5
-schedule==1.1.0
