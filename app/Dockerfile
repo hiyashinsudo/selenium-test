@@ -5,7 +5,7 @@ ENV TZ Asia/Tokyo
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:ja
 
-# mecabの導入
+# 必要ライブラリの導入
 RUN apt-get -y update && \
   apt-get -y upgrade && \
   apt-get install -y mecab && \
