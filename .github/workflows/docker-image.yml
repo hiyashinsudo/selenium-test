@@ -26,7 +26,7 @@ jobs:
           options: -v ${{ github.workspace }}:/var/www
           run: |
               pip install pylint
-              apt install curl
+              apt-get update && apt install curl
               mkdir -p $HOME/bin && curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s -- -b $HOME/bin
               echo "$HOME/bin" >> $GITHUB_PATH
               pylint --rcfile=~/.pylintrc *.py | reviewdog -efm="%f:%l:%c: %m" -reporter=github-pr-review
