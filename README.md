@@ -1,5 +1,10 @@
 # selenium-test
+- dockerコンテナ上でスクレイピングができる
+  - seleniumを含む任意のpythonコードを実行できる
+- コンテナ内のjupyter-labをホストマシンのwebブラウザで操作できる
+  - jupyter-labで開発・実行・テストなどできる
 
+# 使い方
 Image作成〜コンテナ内に入る
 
 `sh build.sh`
