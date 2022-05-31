@@ -13,3 +13,7 @@ jupyter-labに入って開発
 `http://localhost:8888/`
 
 あとは自由
+
+# 動作環境
+- Intel Mac ○
+- M1 Mac ×
