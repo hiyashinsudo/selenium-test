@@ -1,4 +1,3 @@
-"""This is a test program."""
 import os
 
 from selenium import webdriver
