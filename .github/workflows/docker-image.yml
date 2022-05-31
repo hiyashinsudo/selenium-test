@@ -28,5 +28,6 @@ jobs:
               pip install pylint
               apt-get -y update && apt install -y curl
               curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s \
-              && mv /tmp/bin/reviewdog /usr/local/bin \
-              && rm -rf /tmp/bin
+              && mv ./bin/reviewdog /usr/local/bin \
+              && rm -rf ./bin/reviewdog \
+              && pylint src/ | reviewdog -efm="%f:%l:%c: %m" -reporter=github-pr-review
