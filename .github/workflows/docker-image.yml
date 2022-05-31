@@ -24,7 +24,6 @@ jobs:
           options: -v ${{ github.workspace }}:/var/www
           run: |
               pip install pylint
-              cd /var/www && find . -type f -name "*.py" | xargs pylint
     - name: Setup reviewdog
       run: |
         mkdir -p $HOME/bin && curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s -- -b $HOME/bin
