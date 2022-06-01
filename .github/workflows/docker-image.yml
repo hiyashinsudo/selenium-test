@@ -17,3 +17,11 @@ jobs:
       run: docker-compose up -d
     - name: Exec Container
       run: docker-compose exec --no-TTY app bash
+    - name: Run pylint test with Docker Container
+      uses: addnab/docker-run-action@v3
+      with:
+          image: selenium-test_app:latest
+          options: -v ${{ github.workspace }}:/var/www
+          run: |
+              pip install pylint
+              cd /var/www && find . -type f -name "*.py" | xargs pylint
