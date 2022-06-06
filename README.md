@@ -22,3 +22,4 @@ jupyter-labに入って開発
 # 動作環境
 - Intel Mac ○
 - M1 Mac ×
+- Windows ?
