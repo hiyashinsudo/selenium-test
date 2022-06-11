@@ -4,3 +4,4 @@ selenium==3.141.0
 toml==0.10.2
 urllib3==1.26.5
 jupyterlab==3.4.2
+requests==2.26.0
